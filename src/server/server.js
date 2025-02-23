@@ -59,7 +59,9 @@ app.get('/trip', async function (req, res) {
         : await getCurrentWeather(lat, lng)
 
     const image = await getImage(`${placeName}, ${adminName1} ${countryCode}`);
-    const imageUrl = (image.data.hits[1].largeImageURL);
+    const randomIndex = Math.floor(Math.random() * image.data.hits.length);
+
+    const imageUrl = (image.data.hits[randomIndex].largeImageURL);
 
     // the data could have an array of dates so we need to get the correct date for the weather
 
