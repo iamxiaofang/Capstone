@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+}
+
+b {
+    font-weight: bold;
+}
+
+.city-image {
+    width: 100%;
+}

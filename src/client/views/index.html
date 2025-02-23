@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Capstone Project</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trip Planner</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="form">
+                <input id="zipcode" type="text" name="zipcode" placeholder="Enter zipcode" required>
+                <input id="date" type="text" name="date" placeholder="Enter date" required>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+
+        </section>
+
+        <section id="results"></section>
+    </main>
+
+    <script>
+        // Check that service workers are supported
+        // if ('serviceWorker' in navigator) {
+        //     // Use the window load event to keep the page load performant
+        //     window.addEventListener('load', () => {
+        //         navigator.serviceWorker.register('/service-worker.js');
+        //     });
+        // }
+    </script>
+</body>
+
+</html>
